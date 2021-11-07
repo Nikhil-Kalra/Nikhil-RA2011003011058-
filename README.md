@@ -96,5 +96,109 @@ int main()
     }
     return 0;
 }
+         
+#### Question 7:
+                           
+#include <iostream>
+using namespace std;
+class test{
+public:
+int my_variable;
+};
+int main() {
+test code_chef;
+cin>>code_chef.my_variable;
+if(code_chef.my_variable%2==0){
+cout<<"Even";
+}
+else{
+cout<<"Odd";
+}
+return 0;
+}
+
+#### Question 8:
+ 
+#include<iostream>
+using namespace std;
+void printsums(int N)
+{
+int end;    
+int start=1;
+end=(N+1)/2; 
+int sum=0;
+    while(start<end)
+    {
+    for (int i=start;i<=end;i++)
+        {
+        sum=+i;
+        if (sum == N)
+            {
+            for (int j=start;j<=i;j++)
+            cout<<j<<" ";
+            cout<<"/n";
+            break;
+            }
+        if (sum>N)
+        break;
+        }
+    sum=0;
+    start++;
+    }
+}
+int main()
+{
+int n;
+cin>>n;
+printsums(n);
+return 0;
+}
+  
+Question 9:
+  
+#include <iostream>
+#include<climits>
+using namespace std;
+int main() {
+int length;
+cout<<"enter the length of the array"<<endl;
+cin>>length;
+int array[length];
+for(int i=0;i<length;i++){
+cin>>array[i];
+}
+int min=array[0];int max=array[0];
+for(int i=1;i<length;i++){
+if(array[i]>max)
+max = array[i];
+else if(array[i]<min)
+min = array[i];
+}
+cout<< min<<" "<<max;
+return 0;
+}
+
+Question 10:
+                     
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+int t,i,diff_count;
+scanf("%d",&t);
+char s[100001];
+while(t--){
+diff_count=0;
+scanf("%s",s);
+for(int i=0;i<strlen(s)-1;i++){
+if(s[i]==s[i+1])
+diff_count++;
+}
+printf("%d\n",diff_count);
+}
+return 0;
+}
+
+
 
   
