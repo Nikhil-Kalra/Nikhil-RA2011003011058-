@@ -1,8 +1,8 @@
 # solutions
-##Task for 2nd year students
-###Task 1: Spot the error in following questions:
+## Task for 2nd year students
+### Task 1: Spot the error in following questions:
 
-####Question 1:
+#### Question 1:
 
 #include <stdio.h>
 void main()
@@ -15,7 +15,7 @@ printf(" \n The Last Digit of a Given Number %d = %d", number,LD);
 return 0;
 }
 
-####Question 2:
+#### Question 2:
 
 int main(int len, int* arr, int value)
 {
@@ -29,7 +29,7 @@ sum=0;
 return sum;
 }
 
-####Question 3:
+#### Question 3:
 
 #include <stdio.h>
 int main()
@@ -52,7 +52,7 @@ printf("\n");
 return 0;
 }
 
-####Question 4:
+#### Question 4:
 
 #include <stdio.h>
 int main() {
@@ -61,7 +61,7 @@ a>10?printf("Yes"):printf("No");
 return 0;
 }
 
-####Question 5:
+#### Question 5:
 
 #include <iostream>
 using namespace std;
@@ -78,7 +78,7 @@ cout<<endl;
 return 0;
 }
 
-####Question 6:
+#### Question 6:
   
 #include<stdio.h>
 int main()
