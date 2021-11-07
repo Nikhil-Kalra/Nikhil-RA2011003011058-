@@ -202,6 +202,35 @@ return 0;
 ### Task 2: Solve the given programs:
       
 #### Question 1:
+
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char arr[1000][50];
+    int s,j;
+    char temp[50];
+    scanf("%d",&s);
+    for (int i=0;i<s;i++){
+        scanf("%s",arr[i]);
+        int len=strlen(arr[i]);
+        if(len<4){
+            arr[i][3]=arr[i][len-1];
+        }
+    }
+    for(int i=0;i<s;i++){
+        for (int j=i+1;j<s;j++){
+            if (arr[i][3]>arr[j][3]){
+                strcpy(temp,arr[i]);
+                strcpy(arr[i],arr[j]);
+                strcpy(arr[j],temp);
+            }
+        }
+    }
+    for(int i=0;i<s;i++){
+        printf("%s\n",arr[i]);
+    }
+    return 0;
+}
                                 
                                 
 #### Question 2:
