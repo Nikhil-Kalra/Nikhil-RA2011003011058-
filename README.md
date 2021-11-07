@@ -221,14 +221,32 @@ for(int i=0;i<=n-2;i++){
 			}
 		}
 }
-return arr[n-k];
+return arr[k-1];
 }
 
 int main()
 {
+    int prime=0;
 	int arr[] = { 7,10,4,5,2 };
 	int n = sizeof(arr) / sizeof(arr[0]), k = 4;
-	cout << "K'th smallest element is " << kthSmallest(arr, n, k);
+    kthSmallest(arr, n, k);
+    cout<<arr[k-1]<<" ";
+    cout<<"and"<<" ";
+    for(int i=2;i<arr[k-1]/2;i++){
+        if(arr[k-1]%i==0){
+            prime=0;
+            break;
+        }
+        else{
+            prime=1;
+        }
+    }
+    if(prime==1){
+        cout<<"is prime";
+    }
+    else{
+        cout<<"is not prime";
+    }
 	return 0;
 }
   
