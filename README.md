@@ -154,7 +154,7 @@ printsums(n);
 return 0;
 }
   
-Question 9:
+#### Question 9:
   
 #include <iostream>
 #include<climits>
@@ -178,7 +178,7 @@ cout<< min<<" "<<max;
 return 0;
 }
 
-Question 10:
+#### Question 10:
                      
 #include <stdio.h>
 #include <string.h>
@@ -198,6 +198,105 @@ printf("%d\n",diff_count);
 }
 return 0;
 }
+                                
+### Task 2: Solve the given programs:
+      
+#### Question 1:
+                                
+                                
+#### Question 2:
+                                
+#include <iostream>
+using namespace std;
+
+int kthSmallest(int arr[], int n, int k)
+{
+for(int i=0;i<=n-2;i++){
+		for(int j=0;j<=n-2-i;j++){
+			if(arr[j]>arr[j+1]){
+
+				int temp=arr[j];
+				arr[j]=arr[j+1];
+				arr[j+1]=temp;
+			}
+		}
+}
+return arr[n-k];
+}
+
+int main()
+{
+	int arr[] = { 7,10,4,5,2 };
+	int n = sizeof(arr) / sizeof(arr[0]), k = 4;
+	cout << "K'th smallest element is " << kthSmallest(arr, n, k);
+	return 0;
+}
+  
+#### Question 3:
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n=26;
+    int token=0;
+    for (int i=0;i<n;i++){
+        if (token==0){
+            cout<<(char)(i+65)<<endl;
+            token=1;
+        }
+        else if(token==1){
+            token=2;
+        }
+        else if(token==2){
+            cout<<(char)(i+97)<<endl;
+            token=3;
+        }
+        else if(token==3){
+            token=0;
+        }
+    }
+    return 0;
+}
+
+#### Question 4:
+                                     
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int n,count=0,id,num1,num2;
+    float done=0.0;
+    scanf("%d",&n);
+    int n1=n*n;
+    int n2=n1;
+    printf("%d,%d\n",n1,n2);
+    while(n1!=0){
+        n1=n1/10;
+        count++;
+    }
+    count--;
+    n1=n2;
+    if(n1%2==0){
+        id=count/2;
+    }
+    else{
+        id=count/2+1;
+    }
+    for(int i=0;i<id;i++){
+        num1+=(n1%10)*(int)(pow(10.0,done));
+        done+=1.0;
+        n1=n1/10;
+    }
+    if(num1+n1!=n){
+        printf("Not Chef Number");
+    }
+    else{
+        printf("Chef Number");
+    }
+    return 0;
+}
+  
+
+   
 
 
 
