@@ -19,14 +19,14 @@ void main()
 
 int main(int len, int* arr, int value)
 {
-int sum = 0;
-for(int i =0 ; i< len-1; i++ )
-{
-if(arr[i]%value == 0)
-sum =+ arr[i];
-sum=0;
-}
-return sum;
+	int sum = 0;
+	for(int i =0 ; i< len-1; i++ )
+	{
+	if(arr[i]%value == 0)
+	sum =+ arr[i];
+	sum=0;
+	}
+	return sum;
 }
 
 #### Question 3:
