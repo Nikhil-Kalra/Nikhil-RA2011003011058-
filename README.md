@@ -102,19 +102,19 @@ int main()
 #include <iostream>
 using namespace std;
 class test{
-public:
-int my_variable;
-};
-int main() {
-test code_chef;
-cin>>code_chef.my_variable;
-if(code_chef.my_variable%2==0){
-cout<<"Even";
-}
-else{
-cout<<"Odd";
-}
-return 0;
+	public:
+	int my_variable;
+	};
+	int main() {
+	test code_chef;
+	cin>>code_chef.my_variable;
+	if(code_chef.my_variable%2==0){
+	cout<<"Even";
+	}
+	else{
+	cout<<"Odd";
+	}
+	return 0;
 }
 
 #### Question 8:
