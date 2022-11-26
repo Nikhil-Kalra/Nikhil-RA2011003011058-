@@ -7,12 +7,12 @@ solutions
 #include <stdio.h>
 void main()
 {
-int number, LD;
-printf(" Enter a number");
-scanf("%d",&number);
-LD = number / 10;
-printf(" \n The Last Digit of a Given Number %d = %d", number,LD);
-return 0;
+	int number, LD;
+	printf(" Enter a number");
+	scanf("%d",&number);
+	LD = number / 10;
+	printf(" \n The Last Digit of a Given Number %d = %d", number,LD);
+	return 0;
 }
 
 #### Question 2:
