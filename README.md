@@ -1,4 +1,4 @@
-# solutions
+solutions
 ## Task for 2nd year students
 ### Task 1: Spot the error in following questions:
 
