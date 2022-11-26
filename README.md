@@ -56,9 +56,9 @@ int main()
 
 #include <stdio.h>
 int main() {
-char a='A';
-a>10?printf("Yes"):printf("No");
-return 0;
+	char a='A';
+	a>10?printf("Yes"):printf("No");
+	return 0;
 }
 
 #### Question 5:
